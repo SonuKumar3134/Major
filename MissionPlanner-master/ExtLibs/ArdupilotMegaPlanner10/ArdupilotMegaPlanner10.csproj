@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B1538F7F-C82B-4678-9397-880F92848BFB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArdupilotMegaPlanner10</RootNamespace>
+    <AssemblyName>ArdupilotMegaPlanner10</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>mpdesktop.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="alglibnet2">
+      <HintPath>C:\Program Files\Mission Planner\alglibnet2.dll</HintPath>
+    </Reference>
+    <Reference Include="AviFile">
+      <HintPath>C:\Program Files\Mission Planner\AviFile.dll</HintPath>
+    </Reference>
+    <Reference Include="BaseClassesNET">
+      <HintPath>C:\Program Files\Mission Planner\BaseClassesNET.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto">
+      <HintPath>C:\Program Files\Mission Planner\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="BSE.Windows.Forms">
+      <HintPath>C:\Program Files\Mission Planner\BSE.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Core">
+      <HintPath>C:\Program Files\Mission Planner\Core.dll</HintPath>
+    </Reference>
+    <Reference Include="csmatio">
+      <HintPath>C:\Program Files\Mission Planner\csmatio.dll</HintPath>
+    </Reference>
+    <Reference Include="DirectShowLib-2005">
+      <HintPath>C:\Program Files\Mission Planner\DirectShowLib-2005.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Data">
+      <HintPath>C:\Program Files\Mission Planner\DotSpatial.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Extensions">
+      <HintPath>C:\Program Files\Mission Planner\DotSpatial.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Mono">
+      <HintPath>C:\Program Files\Mission Planner\DotSpatial.Mono.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Projections">
+      <HintPath>C:\Program Files\Mission Planner\DotSpatial.Projections.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Serialization">
+      <HintPath>C:\Program Files\Mission Planner\DotSpatial.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Topology">
+      <HintPath>C:\Program Files\Mission Planner\DotSpatial.Topology.dll</HintPath>
+    </Reference>
+    <Reference Include="GeoUtility">
+      <HintPath>C:\Program Files\Mission Planner\GeoUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core">
+      <HintPath>C:\Program Files\Mission Planner\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms">
+      <HintPath>C:\Program Files\Mission Planner\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>C:\Program Files\Mission Planner\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>C:\Program Files\Mission Planner\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced">
+      <HintPath>C:\Program Files\Mission Planner\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython">
+      <HintPath>C:\Program Files\Mission Planner\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Modules">
+      <HintPath>C:\Program Files\Mission Planner\IronPython.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.SQLite">
+      <HintPath>C:\Program Files\Mission Planner\IronPython.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython.Wpf">
+      <HintPath>C:\Program Files\Mission Planner\IronPython.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="KMLib">
+      <HintPath>C:\Program Files\Mission Planner\KMLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>C:\Program Files\Mission Planner\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MAVLink">
+      <HintPath>C:\Program Files\Mission Planner\MAVLink.dll</HintPath>
+    </Reference>
+    <Reference Include="MetaDataExtractor">
+      <HintPath>C:\Program Files\Mission Planner\MetaDataExtractor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Mission Planner\Microsoft.DirectX.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.DirectX.DirectInput, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Mission Planner\Microsoft.DirectX.DirectInput.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamic">
+      <HintPath>C:\Program Files\Mission Planner\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting">
+      <HintPath>C:\Program Files\Mission Planner\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting.AspNet">
+      <HintPath>C:\Program Files\Mission Planner\Microsoft.Scripting.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting.Metadata">
+      <HintPath>C:\Program Files\Mission Planner\Microsoft.Scripting.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="MissionPlanner.Comms">
+      <HintPath>C:\Program Files\Mission Planner\MissionPlanner.Comms.dll</HintPath>
+    </Reference>
+    <Reference Include="MissionPlanner.Controls">
+      <HintPath>C:\Program Files\Mission Planner\MissionPlanner.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="MissionPlanner.Utilities">
+      <HintPath>C:\Program Files\Mission Planner\MissionPlanner.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="netDxf">
+      <HintPath>C:\Program Files\Mission Planner\netDxf.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectListView">
+      <HintPath>C:\Program Files\Mission Planner\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Mission Planner\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK.GLControl, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Mission Planner\OpenTK.GLControl.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjNet">
+      <HintPath>C:\Program Files\Mission Planner\ProjNet.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>C:\Program Files\Mission Planner\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpKml">
+      <HintPath>C:\Program Files\Mission Planner\SharpKml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Reactive.Core">
+      <HintPath>C:\Program Files\Mission Planner\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>C:\Program Files\Mission Planner\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>C:\Program Files\Mission Planner\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>C:\Program Files\Mission Planner\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Speech">
+      <HintPath>C:\Program Files\Mission Planner\System.Speech.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Transitions">
+      <HintPath>C:\Program Files\Mission Planner\Transitions.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph">
+      <HintPath>C:\Program Files\Mission Planner\ZedGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="zlib.net">
+      <HintPath>C:\Program Files\Mission Planner\zlib.net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mpdesktop.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
